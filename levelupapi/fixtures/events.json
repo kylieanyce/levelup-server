@@ -1,0 +1,14 @@
+[
+    {
+        "model": "levelupapi.event",
+        "pk": 1,
+        "fields": {
+            "name": "Board Game Night",
+            "datetime": "2020-12-02 10:00 [UTC]",
+            "content": "Bring a game to play and a snack to share!",
+            "game": 1,
+            "host": 1
+        }
+    }
+]
+

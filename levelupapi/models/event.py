@@ -10,3 +10,5 @@ class Event(models.Model):
     content = models.TextField()
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
     host = models.ForeignKey(Gamer, on_delete=models.CASCADE)
+    attendees = models.ManyToManyField(
+        "Gamer", through="GamerEvent", related_name="Attending")
