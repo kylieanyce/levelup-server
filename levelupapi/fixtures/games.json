@@ -1,0 +1,14 @@
+[
+    {
+        "model": "levelupapi.game",
+        "pk": 1,
+        "fields": {
+            "name": 1,
+            "min_players": 2,
+            "max_players": 4,
+            "difficulty": "easy",
+            "game_type": 1
+        }
+    }
+]
+
