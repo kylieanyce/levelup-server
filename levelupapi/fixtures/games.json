@@ -3,7 +3,7 @@
         "model": "levelupapi.game",
         "pk": 1,
         "fields": {
-            "name": 1,
+            "name": "Dominos",
             "min_players": 2,
             "max_players": 4,
             "difficulty": "easy",
@@ -14,7 +14,7 @@
         "model": "levelupapi.game",
         "pk": 2,
         "fields": {
-            "name": 1,
+            "name": "Charades",
             "min_players": 2,
             "max_players": 8,
             "difficulty": "moderate",
@@ -25,7 +25,7 @@
         "model": "levelupapi.game",
         "pk": 3,
         "fields": {
-            "name": 1,
+            "name": "Magic",
             "min_players": 4,
             "max_players": 10,
             "difficulty": "hard",
