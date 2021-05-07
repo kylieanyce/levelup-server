@@ -4,9 +4,34 @@
         "pk": 1,
         "fields": {
             "name": "Board Game Night",
-            "datetime": "2020-12-02 10:00 [UTC]",
+            "date": "2021-04-03",
+            "time": "10:00",            
             "content": "Bring a game to play and a snack to share!",
             "game": 1,
+            "host": 1
+        }
+    },
+    {
+        "model": "levelupapi.event",
+        "pk": 2,
+        "fields": {
+            "name": "Card Night",
+            "date": "2021-03-25",
+            "time": "10:00",            
+            "content": "Bring a game to play and a snack to share!",
+            "game": 2,
+            "host": 1
+        }
+    },
+    {
+        "model": "levelupapi.event",
+        "pk": 3,
+        "fields": {
+            "name": "Magic the Gathering",
+            "date": "2021-02-13",
+            "time": "10:00",
+            "content": "Bring a deck and a snack!",
+            "game": 3,
             "host": 1
         }
     }
