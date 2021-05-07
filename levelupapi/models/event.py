@@ -6,7 +6,8 @@ from .gamer import Gamer
 class Event(models.Model):
 
     name = models.CharField(max_length=50)
-    datetime = models.DateTimeField()
+    date = models.DateField()
+    time = models.TimeField()
     content = models.TextField()
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
     host = models.ForeignKey(Gamer, on_delete=models.CASCADE)

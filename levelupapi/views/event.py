@@ -24,7 +24,8 @@ class Events(ViewSet):
 
         event = Event()
         event.name = request.data["name"]
-        event.datetime = request.data["datetime"]
+        event.date = request.data["date"]
+        event.time = request.data["time"]
         event.content = request.data["description"]
         event.host = gamer
 
@@ -61,7 +62,8 @@ class Events(ViewSet):
 
         event = Event.objects.get(pk=pk)
         event.name = request.data["name"]
-        event.datetime = request.data["datetime"]
+        event.date = request.data["date"]
+        event.time = request.data["time"]
         event.content = request.data["description"]
         event.host = host
 
@@ -131,7 +133,7 @@ class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
         fields = ('id', 'game', 'host',
-                  'content', 'datetime', 'attending')
+                  'content', 'date', 'time', 'attendees')
 
 
 class GameSerializer(serializers.ModelSerializer):
