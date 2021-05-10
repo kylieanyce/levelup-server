@@ -3,3 +3,4 @@ from .auth import register_user
 from .gametype import GameTypes, GameTypeSerializer
 from .game import Games, GameSerializer
 from .event import Events
+from .profile import Profile
