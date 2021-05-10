@@ -1,2 +1,2 @@
 SELECT *
-FROM levelupapi_event;
+FROM levelupapi_gamerEvent;

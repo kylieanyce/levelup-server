@@ -13,3 +13,11 @@ class Event(models.Model):
     host = models.ForeignKey(Gamer, on_delete=models.CASCADE)
     attendees = models.ManyToManyField(
         "Gamer", through="GamerEvent", related_name="Attending")
+
+    @property
+    def joined(self):
+        return self.__joined
+
+    @joined.setter
+    def joined(self, value):
+        self.__joined = value
