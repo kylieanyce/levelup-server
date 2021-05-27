@@ -13,6 +13,8 @@ from levelupapi.views.game import GameSerializer
 
 class Events(ViewSet):
     @action(methods=['post', 'delete'], detail=True)
+    # detail=True is for using the current action on a single event
+    # detail=False is for using the action on a list of events
     def signup(self, request, pk=None):
         """Managing gamers signing up for events"""
         # Django uses the `Authorization` header to determine
