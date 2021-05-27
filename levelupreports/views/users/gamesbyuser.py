@@ -3,7 +3,6 @@ import sqlite3
 from django.shortcuts import render
 from levelupapi.models import Game
 from levelupreports.views import Connection
-from levelupreports.views import Connection
 
 
 def usergame_list(request):
